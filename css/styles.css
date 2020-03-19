@@ -1,0 +1,152 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+body{
+    background-color: rgb(40, 38,49);
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.952);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.9em;
+}
+
+.score-container{
+    border: 2px solid white;
+    height: 100px;
+    width: 230px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label{
+    width: 40px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 40%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userlabel{
+    left: -1.2em;
+}
+
+.cpulabel{
+    right:-1.2em;
+}
+
+.points{
+    color: white;
+    font-size: 2em;
+}
+
+.creator{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.creator h2{
+    font-size: 2em;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.pictureBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: seashell;
+    background-size: 5em;
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+    cursor: pointer;
+}
+
+.picture:hover{
+    animation-name: animation;
+    animation-iteration-count: 1;
+    animation-duration: 1000ms;
+    background-color: rgba(196, 141, 41, 0.884);
+    transition: background-color 1000ms;
+}
+
+.rock{
+    background-image: url(./images/hand-rock.svg);
+}
+
+.paper{
+    background-image: url(./images/hand-paper.svg);
+}
+
+.scissors{
+    background-image: url(./images/hand-scissors.svg);
+}
+
+.moveBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.moveBox p{
+    color: white;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+@keyframes animation{
+    from{
+
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+#userChoice{
+    color: turquoise;
+}
+
+#cpuChoice{
+    color: tomato;
+}
+
+
+
+
+
+
+
+
